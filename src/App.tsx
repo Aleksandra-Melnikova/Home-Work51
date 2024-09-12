@@ -3,12 +3,10 @@ import './App.css';
 import Circle from './components/Circle/circle.tsx';
 import {useState} from 'react';
 
-
-
 const App = () => {
 const [circleItem, setCircleItem] = useState<number[]>([5, 11, 16, 23, 32]);
 const changeNumbers = () =>{
-  let arrayOfNumbers: number[] =  [];
+  const arrayOfNumbers: number[] =  [];
   const getRandom = () => { // min and max included
     return Math.floor(Math.random() * 32 + 5);
   };
